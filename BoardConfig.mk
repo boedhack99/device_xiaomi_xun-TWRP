@@ -47,6 +47,11 @@ TARGET_USES_REMOTEPROC := true
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := xun
 
+# Screen density
+TARGET_SCREEN_HEIGHT  := 1920
+TARGET_SCREEN_DENSITY := 280
+TARGET_SCREEN_WIDTH   := 1200
+
 # Kernel/Ramdisk
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -146,7 +151,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TW_THEME := portrait_hdpi
+#TW_THEME := portrait_hdpi
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone34/temp"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness"
 TW_STATUS_ICONS_ALIGN := center
