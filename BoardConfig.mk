@@ -85,6 +85,10 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # BOARD_SUPER_PARTITION_SIZE - 4MB
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor vendor_dlkm odm
 
+BOARD_USES_SYSTEM_DLKMIMAGE   := true
+BOARD_PARTITION_LIST += system_dlkm
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
+
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 
 # Workaround for error copying vendor files to recovery ramdisk
