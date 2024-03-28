@@ -122,7 +122,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    vendor/qcom/opensource/commonsys-intf/display
 
 #namespace definition for librecovery_updater
 #differentiate legacy 'sg' or 'bsg' framework

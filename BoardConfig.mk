@@ -120,8 +120,6 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.memory.token@1.0 \
     libhidlmemory \
     libnetutils \
-    vendor.display.config@1.0 \
-    vendor.display.config@2.0 \
     libdebuggerd_client
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 
@@ -176,9 +174,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory.token@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libhidlmemory.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libdebuggerd_client.so \
-    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
-    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libdebuggerd_client.so
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko q6_dlkm.ko qcom_q6v5.ko qcom_q6v5_pas.ko qcom_sysmon.ko focaltech_ts_spi.ko leds-qpnp-vibrator-ldo.ko qti_battery_charger.ko"
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
